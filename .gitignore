@@ -1,5 +1,6 @@
 # Higgsfield originals — only optimized web assets ship
 assets/*.png
-assets/teamhub.mp4
+assets/*.mp4
+!assets/*_web.mp4
 .agents/
 .claude/
