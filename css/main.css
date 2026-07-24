@@ -25,7 +25,7 @@
 
   --font-display: "Syne", sans-serif;
   --font-serif: "Instrument Serif", serif;
-  --font-text: "Space Grotesk", sans-serif;
+  --font-text: "Space Grotesk", "Noto Sans KR", sans-serif;
 
   --gutter: clamp(1.25rem, 4vw, 4rem);
   --section-gap: clamp(5rem, 12vh, 9rem);

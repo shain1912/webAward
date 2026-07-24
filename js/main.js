@@ -22,13 +22,13 @@ function scrollToTarget(target) {
   else document.querySelector(target)?.scrollIntoView({ behavior: 'auto' });
 }
 
-/* ---------- Clock (CET) ---------- */
+/* ---------- Clock (KST) ---------- */
 const clockFmt = new Intl.DateTimeFormat('en-GB', {
-  hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Copenhagen',
+  hour: '2-digit', minute: '2-digit', timeZone: 'Asia/Seoul',
 });
 function tickClock() {
   const now = clockFmt.format(new Date());
-  document.querySelectorAll('[data-clock]').forEach((el) => { el.textContent = `${now} CET`; });
+  document.querySelectorAll('[data-clock]').forEach((el) => { el.textContent = `${now} KST`; });
 }
 tickClock();
 setInterval(tickClock, 30_000);
