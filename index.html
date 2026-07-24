@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mara Voss — Product Designer</title>
+  <meta name="description" content="Mara Voss is a principal product designer in Copenhagen crafting calm, precise interfaces for complex systems. Selected work, capabilities and contact." />
+  <meta property="og:title" content="Mara Voss — Product Designer" />
+  <meta property="og:description" content="Calm, precise interfaces for complex systems. Portfolio of principal product designer Mara Voss." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0e0d0b" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e0d0b'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23ff4d21'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/main.css" />
+
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js" } }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#work">Skip to content</a>
+
+  <!-- Preloader -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <span class="preloader__name">Mara Voss</span>
+      <span class="preloader__count"><span data-counter>0</span></span>
+    </div>
+  </div>
+
+  <!-- Grain overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"><span class="cursor__label"></span></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#top" data-magnetic aria-label="Mara Voss — home">
+      <span class="nav__logo-mark" aria-hidden="true"></span>
+      <span class="nav__logo-text">Mara&nbsp;Voss</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#work" data-nav-link><span data-text="Work">Work</span></a>
+      <a href="#about" data-nav-link><span data-text="About">About</span></a>
+      <a href="#services" data-nav-link><span data-text="Services">Services</span></a>
+      <a href="#contact" data-nav-link><span data-text="Contact">Contact</span></a>
+    </nav>
+    <div class="nav__meta">
+      <span class="nav__clock" data-clock>—:—</span>
+      <a class="nav__cta" href="mailto:hello@maravoss.studio" data-magnetic data-cursor="Say hi">
+        <span class="nav__cta-dot" aria-hidden="true"></span>Available&nbsp;Q4
+      </a>
+    </div>
+    <button class="nav__burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile overlay menu -->
+  <div class="menu" id="menu" aria-hidden="true">
+    <nav class="menu__links" aria-label="Menu">
+      <a href="#work"><em>01</em>Work</a>
+      <a href="#about"><em>02</em>About</a>
+      <a href="#services"><em>03</em>Services</a>
+      <a href="#contact"><em>04</em>Contact</a>
+    </nav>
+    <div class="menu__foot">
+      <a href="mailto:hello@maravoss.studio">hello@maravoss.studio</a>
+      <span>Copenhagen, DK</span>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" data-hero>
+      <canvas class="hero__canvas" data-webgl aria-hidden="true"></canvas>
+      <div class="hero__veil" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="hero__kicker" data-hero-fade>
+          <span>Principal Product Designer</span>
+          <span aria-hidden="true">●</span>
+          <span>Copenhagen</span>
+        </p>
+        <h1 class="hero__title" aria-label="Mara Voss">
+          <span class="hero__line"><span class="hero__word" data-hero-word>Mara</span></span>
+          <span class="hero__line hero__line--right"><span class="hero__word hero__word--serif" data-hero-word>Voss</span></span>
+        </h1>
+        <div class="hero__foot">
+          <p class="hero__lede" data-hero-fade>
+            I design <em>calm, precise interfaces</em> for complex systems —
+            turning tangled products into things people love to use.
+          </p>
+          <div class="hero__scroll" data-hero-fade aria-hidden="true">
+            <span>Scroll</span>
+            <span class="hero__scroll-line"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__edge" data-hero-fade aria-hidden="true">
+        <span>Portfolio — 2019&thinsp;→&thinsp;2026</span>
+        <span>Selected work, five products</span>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" data-marquee>
+        <span>Strategy&ensp;—&ensp;Interface&ensp;—&ensp;Systems&ensp;—&ensp;Motion&ensp;—&ensp;Prototyping&ensp;—&ensp;</span
+        ><span>Strategy&ensp;—&ensp;Interface&ensp;—&ensp;Systems&ensp;—&ensp;Motion&ensp;—&ensp;Prototyping&ensp;—&ensp;</span>
+      </div>
+    </div>
+
+    <!-- ============ WORK ============ -->
+    <section class="work" id="work">
+      <header class="section-head">
+        <h2 class="section-head__title" data-split>Selected work</h2>
+        <p class="section-head__meta" data-reveal>05 projects — 2023&thinsp;→&thinsp;2026</p>
+      </header>
+
+      <ul class="work__list">
+
+        <li class="work__item" data-work>
+          <a class="work__link" href="#contact" data-cursor="View case">
+            <figure class="work__visual">
+              <div class="work__art" data-parallax>
+                <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <defs>
+                    <radialGradient id="g1" cx="30%" cy="25%" r="90%">
+                      <stop offset="0%" stop-color="#2b1a12"/><stop offset="55%" stop-color="#140e0a"/><stop offset="100%" stop-color="#0c0a08"/>
+                    </radialGradient>
+                    <linearGradient id="g1b" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#ff4d21"/><stop offset="100%" stop-color="#ff9a5c"/>
+                    </linearGradient>
+                  </defs>
+                  <rect width="800" height="600" fill="url(#g1)"/>
+                  <circle cx="560" cy="210" r="150" fill="none" stroke="url(#g1b)" stroke-width="1.5" opacity=".8"/>
+                  <circle cx="560" cy="210" r="98" fill="none" stroke="url(#g1b)" stroke-width="1.5" opacity=".5"/>
+                  <circle cx="560" cy="210" r="46" fill="url(#g1b)"/>
+                  <path d="M80 470 Q 300 380 720 440" stroke="#ff4d21" stroke-width="1.5" fill="none" opacity=".6"/>
+                  <path d="M80 500 Q 300 410 720 470" stroke="#ff4d21" stroke-width="1" fill="none" opacity=".3"/>
+                  <rect x="82" y="120" width="180" height="110" rx="10" fill="none" stroke="#8a6a55" stroke-width="1" opacity=".7"/>
+                  <rect x="102" y="146" width="90" height="8" rx="4" fill="#8a6a55" opacity=".7"/>
+                  <rect x="102" y="166" width="130" height="8" rx="4" fill="#8a6a55" opacity=".4"/>
+                </svg>
+              </div>
+              <span class="work__index" aria-hidden="true">01</span>
+            </figure>
+            <div class="work__info">
+              <h3 class="work__title">Halo Health</h3>
+              <p class="work__desc">Reimagining chronic-care coordination for 40k patients and their clinicians.</p>
+              <ul class="work__tags" aria-label="Disciplines">
+                <li>Product strategy</li><li>iOS &amp; Android</li><li>2026</li>
+              </ul>
+              <span class="work__arrow" aria-hidden="true">→</span>
+            </div>
+          </a>
+        </li>
+
+        <li class="work__item" data-work>
+          <a class="work__link" href="#contact" data-cursor="View case">
+            <figure class="work__visual">
+              <div class="work__art" data-parallax>
+                <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <defs>
+                    <radialGradient id="g2" cx="70%" cy="20%" r="95%">
+                      <stop offset="0%" stop-color="#101a2e"/><stop offset="60%" stop-color="#0b1020"/><stop offset="100%" stop-color="#080b14"/>
+                    </radialGradient>
+                    <linearGradient id="g2b" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#4d7cff"/><stop offset="100%" stop-color="#9db8ff"/>
+                    </linearGradient>
+                  </defs>
+                  <rect width="800" height="600" fill="url(#g2)"/>
+                  <g stroke="#22304f" stroke-width="1">
+                    <path d="M0 150 H800 M0 300 H800 M0 450 H800 M200 0 V600 M400 0 V600 M600 0 V600"/>
+                  </g>
+                  <path d="M80 430 L 220 340 L 360 390 L 520 240 L 700 170" stroke="url(#g2b)" stroke-width="2.5" fill="none"/>
+                  <circle cx="520" cy="240" r="7" fill="#4d7cff"/>
+                  <circle cx="700" cy="170" r="7" fill="#9db8ff"/>
+                  <rect x="80" y="90" width="150" height="64" rx="12" fill="#101a30" stroke="#2b3b60" stroke-width="1"/>
+                  <rect x="98" y="108" width="70" height="8" rx="4" fill="#4d7cff" opacity=".9"/>
+                  <rect x="98" y="126" width="100" height="8" rx="4" fill="#39507f" opacity=".9"/>
+                </svg>
+              </div>
+              <span class="work__index" aria-hidden="true">02</span>
+            </figure>
+            <div class="work__info">
+              <h3 class="work__title">Aperture Bank</h3>
+              <p class="work__desc">A private-banking app that makes wealth feel legible — not intimidating.</p>
+              <ul class="work__tags" aria-label="Disciplines">
+                <li>Interface design</li><li>Design language</li><li>2025</li>
+              </ul>
+              <span class="work__arrow" aria-hidden="true">→</span>
+            </div>
+          </a>
+        </li>
+
+        <li class="work__item" data-work>
+          <a class="work__link" href="#contact" data-cursor="View case">
+            <figure class="work__visual">
+              <div class="work__art" data-parallax>
+                <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <defs>
+                    <radialGradient id="g3" cx="35%" cy="70%" r="95%">
+                      <stop offset="0%" stop-color="#16211a"/><stop offset="60%" stop-color="#0e1511"/><stop offset="100%" stop-color="#0a0e0b"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="800" height="600" fill="url(#g3)"/>
+                  <g fill="none" stroke="#63b57f" stroke-width="1.5">
+                    <path d="M140 480 C 240 420, 200 300, 300 260 S 480 220, 520 140" opacity=".85"/>
+                    <path d="M200 500 C 300 450, 280 340, 380 300 S 560 260, 610 180" opacity=".45"/>
+                  </g>
+                  <circle cx="520" cy="140" r="8" fill="#63b57f"/>
+                  <circle cx="610" cy="180" r="6" fill="#63b57f" opacity=".6"/>
+                  <g fill="#2a3d31">
+                    <rect x="560" y="380" width="160" height="12" rx="6"/>
+                    <rect x="560" y="404" width="120" height="12" rx="6"/>
+                    <rect x="560" y="428" width="140" height="12" rx="6"/>
+                  </g>
+                  <rect x="82" y="100" width="120" height="120" rx="60" fill="none" stroke="#3c5747" stroke-width="1.5"/>
+                  <rect x="122" y="140" width="40" height="40" rx="20" fill="#63b57f" opacity=".9"/>
+                </svg>
+              </div>
+              <span class="work__index" aria-hidden="true">03</span>
+            </figure>
+            <div class="work__info">
+              <h3 class="work__title">Fieldnote</h3>
+              <p class="work__desc">Research repository that turns scattered interviews into shared insight.</p>
+              <ul class="work__tags" aria-label="Disciplines">
+                <li>0&thinsp;→&thinsp;1 product</li><li>Web app</li><li>2024</li>
+              </ul>
+              <span class="work__arrow" aria-hidden="true">→</span>
+            </div>
+          </a>
+        </li>
+
+        <li class="work__item" data-work>
+          <a class="work__link" href="#contact" data-cursor="View case">
+            <figure class="work__visual">
+              <div class="work__art" data-parallax>
+                <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <defs>
+                    <radialGradient id="g4" cx="65%" cy="35%" r="95%">
+                      <stop offset="0%" stop-color="#221a2e"/><stop offset="60%" stop-color="#151020"/><stop offset="100%" stop-color="#0e0b14"/>
+                    </radialGradient>
+                    <linearGradient id="g4b" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#a06bff"/><stop offset="100%" stop-color="#e0c9ff"/>
+                    </linearGradient>
+                  </defs>
+                  <rect width="800" height="600" fill="url(#g4)"/>
+                  <g stroke="#33264d" stroke-width="1" fill="none">
+                    <rect x="90" y="90" width="130" height="130" rx="14"/>
+                    <rect x="250" y="90" width="130" height="130" rx="65"/>
+                    <rect x="410" y="90" width="130" height="130" rx="14"/>
+                    <rect x="570" y="90" width="130" height="130" rx="65"/>
+                  </g>
+                  <rect x="250" y="250" width="130" height="130" rx="14" fill="url(#g4b)"/>
+                  <rect x="410" y="250" width="130" height="130" rx="65" fill="none" stroke="#a06bff" stroke-width="1.5"/>
+                  <g stroke="#33264d" stroke-width="1" fill="none">
+                    <rect x="90" y="410" width="130" height="130" rx="65"/>
+                    <rect x="250" y="410" width="130" height="130" rx="14"/>
+                    <rect x="570" y="410" width="130" height="130" rx="14"/>
+                  </g>
+                </svg>
+              </div>
+              <span class="work__index" aria-hidden="true">04</span>
+            </figure>
+            <div class="work__info">
+              <h3 class="work__title">Orbit OS</h3>
+              <p class="work__desc">A design system serving 11 product teams — 240 components, one voice.</p>
+              <ul class="work__tags" aria-label="Disciplines">
+                <li>Design systems</li><li>Tooling</li><li>2024</li>
+              </ul>
+              <span class="work__arrow" aria-hidden="true">→</span>
+            </div>
+          </a>
+        </li>
+
+        <li class="work__item" data-work>
+          <a class="work__link" href="#contact" data-cursor="View case">
+            <figure class="work__visual">
+              <div class="work__art" data-parallax>
+                <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                  <defs>
+                    <radialGradient id="g5" cx="50%" cy="80%" r="100%">
+                      <stop offset="0%" stop-color="#2b2114"/><stop offset="60%" stop-color="#17120b"/><stop offset="100%" stop-color="#0e0b07"/>
+                    </radialGradient>
+                  </defs>
+                  <rect width="800" height="600" fill="url(#g5)"/>
+                  <g stroke="#e8b64c" stroke-width="1.5" fill="none">
+                    <path d="M100 300 q 25 -70 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0" opacity=".9"/>
+                  </g>
+                  <g stroke="#5c4a2a" stroke-width="1" fill="none">
+                    <path d="M100 340 q 25 -40 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0"/>
+                    <path d="M100 380 q 25 -20 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0 t 50 0"/>
+                  </g>
+                  <circle cx="400" cy="150" r="46" fill="none" stroke="#e8b64c" stroke-width="1.5"/>
+                  <circle cx="400" cy="150" r="6" fill="#e8b64c"/>
+                </svg>
+              </div>
+              <span class="work__index" aria-hidden="true">05</span>
+            </figure>
+            <div class="work__info">
+              <h3 class="work__title">Loom Audio</h3>
+              <p class="work__desc">Companion app for a hi-fi speaker — sound you can see and shape.</p>
+              <ul class="work__tags" aria-label="Disciplines">
+                <li>Hardware UX</li><li>Motion design</li><li>2023</li>
+              </ul>
+              <span class="work__arrow" aria-hidden="true">→</span>
+            </div>
+          </a>
+        </li>
+
+      </ul>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <header class="section-head">
+        <h2 class="section-head__title" data-split>About</h2>
+        <p class="section-head__meta" data-reveal>Twelve years, three countries</p>
+      </header>
+
+      <blockquote class="about__quote" data-split-lines>
+        Good product design is quiet. It removes friction until the
+        <em>interface disappears</em> and only the intent remains.
+      </blockquote>
+
+      <div class="about__grid">
+        <div class="about__portrait" data-reveal aria-hidden="true">
+          <svg viewBox="0 0 480 600" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <radialGradient id="gp" cx="50%" cy="30%" r="90%">
+                <stop offset="0%" stop-color="#241c15"/><stop offset="100%" stop-color="#0f0d0a"/>
+              </radialGradient>
+            </defs>
+            <rect width="480" height="600" fill="url(#gp)"/>
+            <circle cx="240" cy="230" r="110" fill="none" stroke="#ff4d21" stroke-width="1.5"/>
+            <circle cx="240" cy="230" r="70" fill="none" stroke="#8a6a55" stroke-width="1" opacity=".6"/>
+            <path d="M120 480 Q 240 380 360 480" stroke="#ff4d21" stroke-width="1.5" fill="none"/>
+            <path d="M100 520 Q 240 420 380 520" stroke="#8a6a55" stroke-width="1" fill="none" opacity=".5"/>
+            <circle cx="240" cy="230" r="10" fill="#ff4d21"/>
+          </svg>
+        </div>
+        <div class="about__body">
+          <p data-reveal>
+            I'm Mara — a principal product designer based in Copenhagen, previously
+            in Berlin and Seoul. For twelve years I've worked where ambiguity is
+            highest: zero-to-one products, gnarly enterprise flows, and design
+            systems that have to hold up under scale.
+          </p>
+          <p data-reveal>
+            My practice pairs sharp systems thinking with an obsessive eye for
+            typography and motion. I prototype in code, test with real users, and
+            stay through delivery — design isn't done until it ships.
+          </p>
+          <dl class="about__stats">
+            <div data-reveal><dt data-count="12">0</dt><dd>Years in practice</dd></div>
+            <div data-reveal><dt data-count="34">0</dt><dd>Products shipped</dd></div>
+            <div data-reveal><dt data-count="9">0</dt><dd>Design awards</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services" id="services">
+      <header class="section-head">
+        <h2 class="section-head__title" data-split>Services</h2>
+        <p class="section-head__meta" data-reveal>What I can do for you</p>
+      </header>
+      <ul class="services__list">
+        <li class="services__item" data-reveal data-cursor="●">
+          <span class="services__num">01</span>
+          <h3 class="services__name">Product Strategy</h3>
+          <p class="services__desc">Discovery, positioning, and roadmaps that connect user needs to business bets.</p>
+        </li>
+        <li class="services__item" data-reveal data-cursor="●">
+          <span class="services__num">02</span>
+          <h3 class="services__name">Interface Design</h3>
+          <p class="services__desc">End-to-end UX and UI for web and native — from first wireframe to pixel-final.</p>
+        </li>
+        <li class="services__item" data-reveal data-cursor="●">
+          <span class="services__num">03</span>
+          <h3 class="services__name">Design Systems</h3>
+          <p class="services__desc">Token architecture, component libraries, and the governance to keep them alive.</p>
+        </li>
+        <li class="services__item" data-reveal data-cursor="●">
+          <span class="services__num">04</span>
+          <h3 class="services__name">Prototyping &amp; Motion</h3>
+          <p class="services__desc">High-fidelity prototypes in code; motion language that explains, not decorates.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============ RECOGNITION ============ -->
+    <section class="recognition">
+      <header class="section-head">
+        <h2 class="section-head__title" data-split>Recognition</h2>
+        <p class="section-head__meta" data-reveal>Selected honours</p>
+      </header>
+      <ul class="recognition__list">
+        <li data-reveal><span>Awwwards</span><span>Site of the Day ×3</span><span>2024–26</span></li>
+        <li data-reveal><span>FWA</span><span>FWA of the Day</span><span>2025</span></li>
+        <li data-reveal><span>CSS Design Awards</span><span>Website of the Year, shortlist</span><span>2025</span></li>
+        <li data-reveal><span>ADC Europe</span><span>Silver — Digital Design</span><span>2024</span></li>
+      </ul>
+    </section>
+
+    <!-- ============ CONTACT / FOOTER ============ -->
+    <footer class="contact" id="contact">
+      <p class="contact__kicker" data-reveal>Have a product worth obsessing over?</p>
+      <a class="contact__big" href="mailto:hello@maravoss.studio" data-cursor="Email me">
+        <span class="contact__big-line" data-split>Let's talk</span>
+      </a>
+      <div class="contact__grid">
+        <div class="contact__col" data-reveal>
+          <h4>Contact</h4>
+          <a href="mailto:hello@maravoss.studio">hello@maravoss.studio</a>
+          <span>Copenhagen, Denmark</span>
+        </div>
+        <div class="contact__col" data-reveal>
+          <h4>Elsewhere</h4>
+          <a href="#top" data-cursor="↗">LinkedIn</a>
+          <a href="#top" data-cursor="↗">Dribbble</a>
+          <a href="#top" data-cursor="↗">Are.na</a>
+        </div>
+        <div class="contact__col" data-reveal>
+          <h4>Studio</h4>
+          <span data-clock>—:—</span>
+          <span>CET, usually replies&nbsp;&lt;&nbsp;24h</span>
+        </div>
+      </div>
+      <div class="contact__legal" data-reveal>
+        <span>© 2026 Mara Voss Studio</span>
+        <button class="contact__top" data-top data-magnetic>Back to top ↑</button>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
