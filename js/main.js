@@ -116,7 +116,7 @@ document.querySelector('[data-top]')?.addEventListener('click', () => scrollToTa
 /* ---------- WebGL hero (graceful) ---------- */
 const canvas = document.querySelector('[data-webgl]');
 if (canvas) {
-  import('./webgl.js')
+  import('./webgl.js?v=2')
     .then((mod) => mod.initHero(canvas, { reduceMotion }))
     .catch(() => { canvas.remove(); }); // CSS veil/gradient remains as fallback
 }
