@@ -1,0 +1,6 @@
+# Higgsfield originals — only optimized web assets ship
+assets/*.png
+assets/halo.mp4
+assets/aperture.mp4
+.agents/
+.claude/

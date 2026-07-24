@@ -8,6 +8,7 @@ A single-page portfolio for a fictional principal product designer. Static site,
 - **GSAP 3.13** (ScrollTrigger, SplitText) — preloader, hero intro, masked line reveals, parallax, counters
 - **Lenis** — smooth scrolling, integrated with ScrollTrigger
 - **Three.js** — hero background: domain-warped fbm shader on a fullscreen triangle, mouse-reactive
+- **Higgsfield AI** — case-study imagery (GPT Image 2 / Nano Banana 2), hover video loops (Kling 3.0 Turbo), and the about portrait live in `assets/` as optimized WebP/MP4
 
 ## Run
 

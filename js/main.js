@@ -121,6 +121,25 @@ if (canvas) {
     .catch(() => { canvas.remove(); }); // CSS veil/gradient remains as fallback
 }
 
+/* ---------- Work hover video loops ---------- */
+document.querySelectorAll('.work__video').forEach((video) => {
+  if (reduceMotion) return;
+  const link = video.closest('.work__link');
+  if (finePointer) {
+    link.addEventListener('mouseenter', () => { video.play().catch(() => {}); });
+    link.addEventListener('mouseleave', () => video.pause());
+  } else {
+    new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        video.play().then(() => video.classList.add('is-on')).catch(() => {});
+      } else {
+        video.pause();
+        video.classList.remove('is-on');
+      }
+    }, { threshold: 0.45 }).observe(video);
+  }
+});
+
 /* ---------- Preloader + hero intro ---------- */
 const preloader = document.querySelector('.preloader');
 const counterEl = document.querySelector('[data-counter]');

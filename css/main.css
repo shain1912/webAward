@@ -507,7 +507,20 @@ section, .contact { padding: var(--section-gap) var(--gutter) 0; }
   inset: -12% 0;
   transition: transform 0.9s var(--ease-expo);
 }
-.work__art svg { width: 100%; height: 100%; }
+.work__art img,
+.work__art video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.work__video {
+  opacity: 0;
+  transition: opacity 0.5s var(--ease-out);
+}
+.work__link:hover .work__video,
+.work__video.is-on { opacity: 1; }
 .work__link:hover .work__art { transform: scale(1.045); }
 .work__index {
   position: absolute;
@@ -588,7 +601,7 @@ section, .contact { padding: var(--section-gap) var(--gutter) 0; }
   aspect-ratio: 4 / 5;
   background: var(--bg-soft);
 }
-.about__portrait svg { width: 100%; height: 100%; }
+.about__portrait img { width: 100%; height: 100%; object-fit: cover; }
 .about__body {
   display: flex;
   flex-direction: column;
