@@ -59,16 +59,49 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
   });
 });
 
+/* ---------- Masked headline reveal (hero) ---------- */
+function initHeadline() {
+  const lines = gsap.utils.toArray('.kk-hero-h .line > span');
+  const marks = document.querySelectorAll('.kk-hero-h .em');
+  if (!lines.length) return;
+  if (reduceMotion) { gsap.set(lines, { yPercent: 0 }); marks.forEach((m) => m.classList.add('drawn')); return; }
+  gsap.set(lines, { yPercent: 110 });
+  gsap.to(lines, {
+    yPercent: 0, duration: 0.9, ease: 'expo.out', stagger: 0.12,
+    onComplete: () => marks.forEach((m) => m.classList.add('drawn')),
+  });
+}
+
 /* ---------- Slow reveal — the one motion idiom ---------- */
 function initReveals() {
   const items = gsap.utils.toArray('[data-reveal]');
   if (reduceMotion) { gsap.set(items, { opacity: 1, y: 0 }); return; }
   items.forEach((el) => {
     gsap.to(el, {
-      opacity: 1, y: 0, duration: 0.7, ease: 'power3.out',
+      opacity: 1, y: 0, duration: 0.75, ease: 'power3.out',
       scrollTrigger: { trigger: el, start: 'top 92%' },
     });
   });
+}
+
+/* ---------- Scroll-driven nav theme (light/dark chapters) ---------- */
+function initNavTheme() {
+  const nav = document.querySelector('.kk-nav');
+  const chapters = gsap.utils.toArray('[data-chapter]');
+  if (!nav || !chapters.length) return;
+  function update() {
+    const line = nav.offsetHeight + 2;
+    let dark = false;
+    for (const s of chapters) {
+      const r = s.getBoundingClientRect();
+      if (r.top <= line && r.bottom > line) dark = s.dataset.chapter === 'dark';
+    }
+    nav.classList.toggle('is-dark', dark);
+  }
+  if (lenis) lenis.on('scroll', update);
+  else window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
 }
 
 /* ---------- Stat counters ---------- */
@@ -88,7 +121,9 @@ function initCounters() {
 }
 
 document.fonts.ready.then(() => {
+  initHeadline();
   initReveals();
   initCounters();
+  initNavTheme();
   ScrollTrigger.refresh();
 });

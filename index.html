@@ -12,7 +12,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="theme-color" content="#FAF9F6" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23121211'/%3E%3Crect x='7' y='14' width='18' height='5' rx='2.5' fill='%23C6FF1F'/%3E%3C/svg%3E" />
-  <link rel="stylesheet" href="css/main.css?v=6" />
+  <link rel="stylesheet" href="css/main.css?v=7" />
   <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
@@ -22,7 +22,8 @@
   <header class="kk-nav">
     <div class="kk-nav-in">
       <a class="kk-nav-logo" href="#top" aria-label="KODE KOREA — home">
-        <img src="assets/logo-kode.png" alt="KODE KOREA" />
+        <img class="logo-dark" src="assets/logo-kode.png" alt="KODE KOREA" />
+        <img class="logo-light" src="assets/logo-kode-white.png" alt="" aria-hidden="true" />
       </a>
       <nav class="kk-nav-links" aria-label="주요 메뉴">
         <a href="#work">Work</a>
@@ -49,12 +50,15 @@
   <main id="top">
 
     <!-- ============ HERO ============ -->
-    <section class="kk-sec kk-hero">
+    <section class="kk-sec kk-hero" data-chapter="light">
       <div class="kk-wrap">
         <span class="kk-label" data-reveal>Software &amp; Education Studio · Busan</span>
-        <h1 data-reveal>만들고,<br />가르칩니다.</h1>
+        <h1 class="kk-hero-h" aria-label="만든 사람이 가르칩니다.">
+          <span class="line"><span>만든 사람이</span></span>
+          <span class="line"><span class="em">가르칩니다.</span></span>
+        </h1>
         <div class="kk-hero-btm">
-          <p data-reveal>우리는 부산의 소프트웨어·교육 스튜디오입니다. 현장에서 쓰는 웹·앱과 자체 프로덕트를 만들고, 학교와 기업에서 그 경험을 직접 가르칩니다.</p>
+          <p data-reveal>우리가 만든 걸, 우리가 가르칩니다. 부산에서 웹·앱과 자체 프로덕트를 짓고, 학교와 기업 현장에 그대로 전합니다.</p>
           <a class="kk-tlink" href="#work" data-reveal>우리가 하는 일
             <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
@@ -66,7 +70,7 @@
     </section>
 
     <!-- ============ STATEMENT ============ -->
-    <section class="kk-sec">
+    <section class="kk-sec" data-chapter="light">
       <div class="kk-wrap kk-stmt">
         <span class="kk-label" data-reveal>Approach</span>
         <div>
@@ -80,7 +84,7 @@
     </section>
 
     <!-- ============ WORK ============ -->
-    <section class="kk-sec" id="work">
+    <section class="kk-sec" id="work" data-chapter="light">
       <div class="kk-wrap">
         <div class="kk-sec-head">
           <span class="kk-label" data-reveal>Selected work</span>
@@ -154,7 +158,7 @@
     </section>
 
     <!-- ============ TWO AXES ============ -->
-    <section class="kk-sec" id="studio">
+    <section class="kk-sec kk-invert" id="studio" data-chapter="dark">
       <div class="kk-wrap">
         <div class="kk-sec-head">
           <span class="kk-label" data-reveal>Two axes</span>
@@ -188,7 +192,7 @@
     </section>
 
     <!-- ============ STATS ============ -->
-    <section class="kk-sec">
+    <section class="kk-sec" data-chapter="light">
       <div class="kk-wrap kk-stats-sec">
         <span class="kk-label" data-reveal>By the numbers</span>
         <div class="kk-stats">
@@ -200,7 +204,7 @@
     </section>
 
     <!-- ============ APPROACH ============ -->
-    <section class="kk-sec" id="approach">
+    <section class="kk-sec" id="approach" data-chapter="light">
       <div class="kk-wrap">
         <div class="kk-sec-head">
           <span class="kk-label" data-reveal>How we work</span>
@@ -233,7 +237,7 @@
     </section>
 
     <!-- ============ MARQUEE ============ -->
-    <section class="kk-marq" aria-hidden="true">
+    <section class="kk-marq" aria-hidden="true" data-chapter="light">
       <div class="kk-marq-track">
         <span class="kk-marq-item">부산기계공고</span><span class="kk-marq-item">정보영재원</span><span class="kk-marq-item">부산참여플랫폼</span><span class="kk-marq-item">TeamHub</span><span class="kk-marq-item">BubbleMap</span><span class="kk-marq-item">AI · AX 특강</span><span class="kk-marq-item">KODE LMS</span><span class="kk-marq-item">허준클라우드</span>
         <span class="kk-marq-item">부산기계공고</span><span class="kk-marq-item">정보영재원</span><span class="kk-marq-item">부산참여플랫폼</span><span class="kk-marq-item">TeamHub</span><span class="kk-marq-item">BubbleMap</span><span class="kk-marq-item">AI · AX 특강</span><span class="kk-marq-item">KODE LMS</span><span class="kk-marq-item">허준클라우드</span>
@@ -241,7 +245,7 @@
     </section>
 
     <!-- ============ CTA ============ -->
-    <section class="kk-invert kk-cta" id="contact">
+    <section class="kk-invert kk-cta" id="contact" data-chapter="dark">
       <div class="kk-cta-in">
         <span class="kk-label" data-reveal style="color:var(--kk-ink-300)">Contact</span>
         <div>
@@ -257,7 +261,7 @@
     </section>
 
     <!-- ============ FOOTER ============ -->
-    <footer class="kk-invert">
+    <footer class="kk-invert" data-chapter="dark">
       <div class="kk-wrap kk-foot">
         <div class="kk-foot-top">
           <div>
@@ -294,6 +298,6 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
-  <script src="js/main.js?v=6"></script>
+  <script src="js/main.js?v=7"></script>
 </body>
 </html>
