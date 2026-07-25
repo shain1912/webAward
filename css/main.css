@@ -235,9 +235,12 @@ html.js [data-reveal]{opacity:0;transform:translateY(16px)}
 
 /* Masked headline reveal (hero) */
 .kk-hero-h{font-family:var(--font-display);font-size:clamp(52px,8.4vw,132px);line-height:var(--leading-display);letter-spacing:var(--tracking-display);font-weight:600}
-.kk-hero-h .line{display:block;overflow:hidden;padding-bottom:.06em}
-.kk-hero-h .line>span{display:block;will-change:transform}
-html.js .kk-hero-h .line>span{transform:translateY(110%)}
+.kk-hero-h .line{display:block;overflow:hidden;padding:.06em 0 .1em}
+.kk-hero-h .line>span{display:block;will-change:transform;transition:transform var(--dur-slow) var(--ease-sig)}
+html.js .kk-hero-h .line>span{transform:translateY(130%)}
+.kk-hero-h.revealed .line>span{transform:translateY(0)}
+.kk-hero-h.revealed .line:nth-child(1)>span{transition-delay:.06s}
+.kk-hero-h.revealed .line:nth-child(2)>span{transition-delay:.19s}
 .kk-hero-h .em{position:relative;display:inline-block}
 .kk-hero-h .em::after{content:"";position:absolute;left:-.03em;right:-.03em;bottom:.1em;height:.085em;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform var(--dur-slow) var(--ease-sig);z-index:-1}
 .kk-hero-h .em.drawn::after{transform:scaleX(1)}

@@ -59,17 +59,16 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
   });
 });
 
-/* ---------- Masked headline reveal (hero) ---------- */
+/* ---------- Masked headline reveal (hero) — CSS-driven ---------- */
 function initHeadline() {
-  const lines = gsap.utils.toArray('.kk-hero-h .line > span');
-  const marks = document.querySelectorAll('.kk-hero-h .em');
-  if (!lines.length) return;
-  if (reduceMotion) { gsap.set(lines, { yPercent: 0 }); marks.forEach((m) => m.classList.add('drawn')); return; }
-  gsap.set(lines, { yPercent: 110 });
-  gsap.to(lines, {
-    yPercent: 0, duration: 0.9, ease: 'expo.out', stagger: 0.12,
-    onComplete: () => marks.forEach((m) => m.classList.add('drawn')),
-  });
+  const h = document.querySelector('.kk-hero-h');
+  if (!h) return;
+  const marks = h.querySelectorAll('.em');
+  if (reduceMotion) { h.classList.add('revealed'); marks.forEach((m) => m.classList.add('drawn')); return; }
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    h.classList.add('revealed');
+    setTimeout(() => marks.forEach((m) => m.classList.add('drawn')), 900);
+  }));
 }
 
 /* ---------- Slow reveal — the one motion idiom ---------- */
