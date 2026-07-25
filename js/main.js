@@ -102,7 +102,7 @@ function initNavTheme() {
     nav.classList.toggle('is-dark', dark);
   }
   if (lenis) lenis.on('scroll', update);
-  else window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('scroll', update, { passive: true });
   window.addEventListener('resize', update);
   update();
 }
