@@ -1,5 +1,7 @@
 # Higgsfield originals — only optimized web assets ship
 assets/*.png
+!assets/logo-kode.png
+!assets/logo-kode-white.png
 assets/*.mp4
 !assets/*_web.mp4
 .agents/
