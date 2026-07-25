@@ -59,16 +59,20 @@ document.querySelectorAll('a[href^="#"]').forEach((a) => {
   });
 });
 
-/* ---------- Masked headline reveal (hero) — CSS-driven ---------- */
+/* ---------- Masked headline reveal (hero) — Web Animations API ---------- */
 function initHeadline() {
-  const h = document.querySelector('.kk-hero-h');
-  if (!h) return;
-  const marks = h.querySelectorAll('.em');
-  if (reduceMotion) { h.classList.add('revealed'); marks.forEach((m) => m.classList.add('drawn')); return; }
-  requestAnimationFrame(() => requestAnimationFrame(() => {
-    h.classList.add('revealed');
-    setTimeout(() => marks.forEach((m) => m.classList.add('drawn')), 900);
-  }));
+  const spans = [...document.querySelectorAll('.kk-hero-h .line > span')];
+  const marks = document.querySelectorAll('.kk-hero-h .em');
+  if (!spans.length) return;
+  if (reduceMotion) { marks.forEach((m) => m.classList.add('drawn')); return; }
+  const ease = 'cubic-bezier(.16,1,.3,1)';
+  spans.forEach((s, i) => {
+    s.animate(
+      [{ transform: 'translateY(115%)' }, { transform: 'translateY(0)' }],
+      { duration: 900, delay: 120 + i * 130, easing: ease, fill: 'both' },
+    );
+  });
+  setTimeout(() => marks.forEach((m) => m.classList.add('drawn')), 120 + spans.length * 130 + 750);
 }
 
 /* ---------- Slow reveal — the one motion idiom ---------- */
