@@ -238,7 +238,7 @@ html.js [data-reveal]{opacity:0;transform:translateY(16px)}
 .kk-hero-h .line{display:block;overflow:hidden;padding:.06em 0 .1em}
 .kk-hero-h .line>span{display:block;will-change:transform;transition:transform var(--dur-slow) var(--ease-sig)}
 html.js .kk-hero-h .line>span{transform:translateY(130%)}
-.kk-hero-h.revealed .line>span{transform:translateY(0)}
+html.js .kk-hero-h.revealed .line>span{transform:translateY(0)}
 .kk-hero-h.revealed .line:nth-child(1)>span{transition-delay:.06s}
 .kk-hero-h.revealed .line:nth-child(2)>span{transition-delay:.19s}
 .kk-hero-h .em{position:relative;display:inline-block}
