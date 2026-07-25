@@ -123,8 +123,17 @@ function initCounters() {
   });
 }
 
+/* ---------- Hero background video ---------- */
+function initHeroVideo() {
+  const v = document.querySelector('.kk-hero-vid');
+  if (!v) return;
+  if (reduceMotion) { v.remove(); return; }
+  v.play().then(() => v.classList.add('on')).catch(() => {});
+}
+
 document.fonts.ready.then(() => {
   initHeadline();
+  initHeroVideo();
   initReveals();
   initCounters();
   initNavTheme();
