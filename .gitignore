@@ -4,3 +4,5 @@ assets/*.mp4
 !assets/*_web.mp4
 .agents/
 .claude/
+_designsystem/
+*.zip

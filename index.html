@@ -3,367 +3,289 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KodeKorea — 소프트웨어 스튜디오</title>
-  <meta name="description" content="KodeKorea는 부산 기반 소프트웨어 스튜디오입니다. 대학·공공기관 웹과 앱, 자체 협업 플랫폼 TeamHub, 코딩 교육 콘텐츠까지 — 기획부터 운영까지 직접 만듭니다." />
-  <meta property="og:title" content="KodeKorea — 소프트웨어 스튜디오" />
-  <meta property="og:description" content="웹 · 앱 · EdTech · 클라우드 — 기획부터 운영까지 직접 만드는 부산의 소프트웨어 스튜디오, KodeKorea." />
+  <title>KODE KOREA — 소프트웨어·교육 스튜디오</title>
+  <meta name="description" content="KODE KOREA(코드코리아)는 부산 기반 소프트웨어·교육 스튜디오입니다. 부산참여플랫폼·TeamHub 같은 소프트웨어를 만들고, 학교와 기업에서 직접 가르칩니다." />
+  <meta property="og:title" content="KODE KOREA — 소프트웨어·교육 스튜디오" />
+  <meta property="og:description" content="만들고, 가르칩니다. 부산의 소프트웨어·교육 스튜디오, KODE KOREA." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://shain1912.github.io/webAward/assets/og.webp" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="theme-color" content="#f4efe5" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230e0d0b'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23ff4d21'/%3E%3C/svg%3E" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="css/main.css?v=5" />
-
+  <meta name="theme-color" content="#FAF9F6" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23121211'/%3E%3Crect x='7' y='14' width='18' height='5' rx='2.5' fill='%23C6FF1F'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/main.css?v=6" />
   <script>document.documentElement.classList.add('js');</script>
-  <script type="importmap">
-    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js" } }
-  </script>
 </head>
 <body>
-  <a class="skip-link" href="#work">Skip to content</a>
+  <a class="skip-link" href="#work">본문으로 건너뛰기</a>
 
-  <!-- Preloader -->
-  <div class="preloader" aria-hidden="true">
-    <div class="preloader__inner">
-      <span class="preloader__name">KodeKorea</span>
-      <span class="preloader__count"><span data-counter>0</span></span>
-    </div>
-  </div>
-
-  <!-- Grain overlay -->
-  <div class="grain" aria-hidden="true"></div>
-
-  <!-- Custom cursor -->
-  <div class="cursor" aria-hidden="true">
-    <div class="cursor__dot"></div>
-    <div class="cursor__ring"><span class="cursor__label"></span></div>
-  </div>
-
-  <!-- Navigation -->
-  <header class="nav" id="nav">
-    <a class="nav__logo" href="#top" data-magnetic aria-label="KodeKorea — home">
-      <span class="nav__logo-mark" aria-hidden="true"></span>
-      <span class="nav__logo-text">Kode&nbsp;Korea</span>
-    </a>
-    <nav class="nav__links" aria-label="Primary">
-      <a href="#work" data-nav-link><span data-text="Work">Work</span></a>
-      <a href="#about" data-nav-link><span data-text="About">About</span></a>
-      <a href="#services" data-nav-link><span data-text="Services">Services</span></a>
-      <a href="#contact" data-nav-link><span data-text="Contact">Contact</span></a>
-    </nav>
-    <div class="nav__meta">
-      <span class="nav__clock" data-clock>—:—</span>
-      <a class="nav__cta" href="mailto:hello@kodekorea.kr" data-magnetic data-cursor="Say hi">
-        <span class="nav__cta-dot" aria-hidden="true"></span>프로젝트&nbsp;문의
+  <!-- ============ NAV ============ -->
+  <header class="kk-nav">
+    <div class="kk-nav-in">
+      <a class="kk-nav-logo" href="#top" aria-label="KODE KOREA — home">
+        <img src="assets/logo-kode.png" alt="KODE KOREA" />
       </a>
+      <nav class="kk-nav-links" aria-label="주요 메뉴">
+        <a href="#work">Work</a>
+        <a href="#studio">Studio</a>
+        <a href="#approach">Approach</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="kk-nav-right">
+        <span class="kk-nav-clock" data-clock>—:—</span>
+        <a class="kk-btn kk-btn-solid kk-btn-sm" href="mailto:hello@kodekorea.kr">프로젝트 문의</a>
+        <button class="kk-burger" aria-label="메뉴 열기" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+      </div>
     </div>
-    <button class="nav__burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
-      <span></span><span></span>
-    </button>
   </header>
 
-  <!-- Mobile overlay menu -->
-  <div class="menu" id="menu" aria-hidden="true">
-    <nav class="menu__links" aria-label="Menu">
-      <a href="#work"><em>01</em>Work</a>
-      <a href="#about"><em>02</em>About</a>
-      <a href="#services"><em>03</em>Services</a>
-      <a href="#contact"><em>04</em>Contact</a>
-    </nav>
-    <div class="menu__foot">
-      <a href="mailto:hello@kodekorea.kr">hello@kodekorea.kr</a>
-      <span>Busan, KR</span>
-    </div>
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="kk-menu" id="menu" aria-hidden="true">
+    <a href="#work"><span class="n">01</span>Work</a>
+    <a href="#studio"><span class="n">02</span>Studio</a>
+    <a href="#approach"><span class="n">03</span>Approach</a>
+    <a href="#contact"><span class="n">04</span>Contact</a>
   </div>
 
   <main id="top">
 
     <!-- ============ HERO ============ -->
-    <section class="hero" data-hero>
-      <canvas class="hero__canvas" data-webgl aria-hidden="true"></canvas>
-      <div class="hero__veil" aria-hidden="true"></div>
+    <section class="kk-sec kk-hero">
+      <div class="kk-wrap">
+        <span class="kk-label" data-reveal>Software &amp; Education Studio · Busan</span>
+        <h1 data-reveal>만들고,<br />가르칩니다.</h1>
+        <div class="kk-hero-btm">
+          <p data-reveal>우리는 부산의 소프트웨어·교육 스튜디오입니다. 현장에서 쓰는 웹·앱과 자체 프로덕트를 만들고, 학교와 기업에서 그 경험을 직접 가르칩니다.</p>
+          <a class="kk-tlink" href="#work" data-reveal>우리가 하는 일
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="kk-hero-media" data-reveal>
+          <img src="assets/wdc.webp" alt="부산참여플랫폼 화면" />
+          <span class="kk-hero-cap">design.kodekorea.kr · 부산참여플랫폼</span>
+        </div>
+      </div>
+    </section>
 
-      <div class="hero__content">
-        <p class="hero__kicker" data-hero-fade>
-          <span>Software Studio</span>
-          <span aria-hidden="true">●</span>
-          <span>Busan, Korea</span>
-        </p>
-        <h1 class="hero__title" aria-label="KodeKorea">
-          <span class="hero__line"><span class="hero__word" data-hero-word>Kode</span></span>
-          <span class="hero__line hero__line--right"><span class="hero__word hero__word--serif" data-hero-word>Korea</span></span>
-        </h1>
-        <div class="hero__foot">
-          <p class="hero__lede" data-hero-fade>
-            코드를 <em>만들고</em>, 다음 세대를 <em>가르칩니다</em> —
-            개발과 교육, 두 축으로 움직이는 부산의 소프트웨어 스튜디오.
-          </p>
-          <div class="hero__scroll" data-hero-fade aria-hidden="true">
-            <span>Scroll</span>
-            <span class="hero__scroll-line"></span>
+    <!-- ============ STATEMENT ============ -->
+    <section class="kk-sec">
+      <div class="kk-wrap kk-stmt">
+        <span class="kk-label" data-reveal>Approach</span>
+        <div>
+          <p class="kk-statement" data-reveal>우리는 강의를 팔지 않습니다. 현장에서 쓰는 소프트웨어를 직접 만들고, 그 경험을 그대로 수업으로 가져갑니다.</p>
+          <div class="kk-stmt-cta" data-reveal>
+            <a class="kk-tlink" href="#approach">우리가 일하는 방식
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="hero__edge" data-hero-fade aria-hidden="true">
-        <span>Build&thinsp;&amp;&thinsp;Teach</span>
-        <span>개발&thinsp;·&thinsp;교육</span>
+    <!-- ============ WORK ============ -->
+    <section class="kk-sec" id="work">
+      <div class="kk-wrap">
+        <div class="kk-sec-head">
+          <span class="kk-label" data-reveal>Selected work</span>
+          <h2 data-reveal>우리가 만들고, 직접 운영하는 것들.</h2>
+          <span class="kk-meta" data-reveal>06 — 개발 · 교육</span>
+        </div>
+        <div class="kk-work">
+
+          <article class="kk-card" data-reveal>
+            <a class="kk-card-media" href="https://team.kodekorea.kr" target="_blank" rel="noopener">
+              <img class="left" src="assets/teamhub.webp" alt="TeamHub 대시보드" loading="lazy" decoding="async" />
+              <span class="kk-card-idx">01</span>
+            </a>
+            <div class="kk-card-head"><span class="kk-card-axis">개발</span><h3>TeamHub</h3></div>
+            <p class="kk-card-d">채널·티켓·스프린트·간트·체크리스트를 한곳에 모은 자체 협업 플랫폼. 지금 우리 팀이 매일 쓰는 도구입니다.</p>
+            <div class="kk-card-m"><span class="kk-tag">자체 프로덕트</span><span class="kk-meta">team.kodekorea.kr</span></div>
+          </article>
+
+          <article class="kk-card" data-reveal>
+            <a class="kk-card-media" href="https://design.kodekorea.kr" target="_blank" rel="noopener">
+              <img class="left" src="assets/wdc.webp" alt="부산참여플랫폼" loading="lazy" decoding="async" />
+              <span class="kk-card-idx">02</span>
+            </a>
+            <div class="kk-card-head"><span class="kk-card-axis">개발</span><h3>부산참여플랫폼</h3></div>
+            <p class="kk-card-d">시민이 우리 동네 문제를 제보·제안·진단하는 공공 참여 플랫폼. 지역별 참여 현황을 지도로 한눈에 보여줍니다.</p>
+            <div class="kk-card-m"><span class="kk-tag">공공 프로젝트</span><span class="kk-meta">design.kodekorea.kr</span></div>
+          </article>
+
+          <article class="kk-card" data-reveal>
+            <a class="kk-card-media" href="https://bp.kodekorea.kr" target="_blank" rel="noopener">
+              <img src="assets/bubblemap.webp" alt="BubbleMap 도면 검수 시스템" loading="lazy" decoding="async" />
+              <span class="kk-card-idx">03</span>
+            </a>
+            <div class="kk-card-head"><span class="kk-card-axis">개발</span><h3>BubbleMap</h3></div>
+            <p class="kk-card-d">도면 위 버블맵으로 검수 항목을 표시하고 추적하는 도면 검수 시스템. 검수자 계정 기반의 협업 워크플로.</p>
+            <div class="kk-card-m"><span class="kk-tag">웹 시스템</span><span class="kk-meta">bp.kodekorea.kr</span></div>
+          </article>
+
+          <article class="kk-card" data-reveal>
+            <a class="kk-card-media" href="https://blend.kodekorea.kr" target="_blank" rel="noopener">
+              <img src="assets/blend.webp" alt="AI·AX 특강 화면" loading="lazy" decoding="async" />
+              <span class="kk-card-idx">04</span>
+            </a>
+            <div class="kk-card-head"><span class="kk-card-axis kk-card-axis--edu">교육</span><h3>AI · AX 특강</h3></div>
+            <p class="kk-card-d">‘AI와 나의 미래’. 강사가 강의실 코드를 열면 학생 화면에 퀴즈·투표·AI 실습이 실시간으로 뜨는 생성형 AI 수업 도구.</p>
+            <div class="kk-card-m"><span class="kk-tag">실시간 수업</span><span class="kk-meta">blend.kodekorea.kr</span></div>
+          </article>
+
+          <article class="kk-card" data-reveal>
+            <a class="kk-card-media" href="https://lms.kodekorea.kr" target="_blank" rel="noopener">
+              <img src="assets/lms.webp" alt="KODE LMS 화면" loading="lazy" decoding="async" />
+              <span class="kk-card-idx">05</span>
+            </a>
+            <div class="kk-card-head"><span class="kk-card-axis kk-card-axis--edu">교육</span><h3>KODE LMS</h3></div>
+            <p class="kk-card-d">수강생 명단으로 로그인하는 온라인 강의·진도체크 시스템. 강의 운영과 학습 현황을 한 곳에서 관리합니다.</p>
+            <div class="kk-card-m"><span class="kk-tag">학습 관리</span><span class="kk-meta">lms.kodekorea.kr</span></div>
+          </article>
+
+          <article class="kk-card" data-reveal>
+            <div class="kk-card-media">
+              <div class="kk-card-ph"><span>[ 사진 자리 ]<br />부산기계공고 인공지능 · 정보영재원 로봇<br />정규 출강 현장</span></div>
+              <span class="kk-card-idx">06</span>
+            </div>
+            <div class="kk-card-head"><span class="kk-card-axis kk-card-axis--edu">교육</span><h3>학교 출강</h3></div>
+            <p class="kk-card-d">부산기계공고 인공지능, 정보영재원 로봇 수업까지 — 교실에서 직접 학생들을 가르칩니다. 수업은 KODE LMS·AI 특강 도구로 이어집니다.</p>
+            <div class="kk-card-m"><span class="kk-tag">정규 출강</span><span class="kk-meta">AI · 로봇</span></div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TWO AXES ============ -->
+    <section class="kk-sec" id="studio">
+      <div class="kk-wrap">
+        <div class="kk-sec-head">
+          <span class="kk-label" data-reveal>Two axes</span>
+          <h2 data-reveal>하나의 팀, 서로를 먹여 살리는 두 축.</h2>
+          <span class="kk-meta" data-reveal>Build · Teach</span>
+        </div>
+        <div class="kk-axes">
+          <span></span>
+          <div class="kk-axes-grid">
+            <div class="kk-axis" data-reveal>
+              <div class="kk-axis-h"><span class="n">01</span><h3>개발</h3><span class="en">Build</span></div>
+              <p class="kk-axis-d">현장에서 쓰는 소프트웨어를 짓습니다. 기획부터 디자인, 개발, 배포, 운영까지 한 팀이 끝까지.</p>
+              <ul>
+                <li><b>웹 · 앱</b><span>부산참여플랫폼 · BubbleMap</span></li>
+                <li><b>자체 프로덕트</b><span>협업 플랫폼 TeamHub</span></li>
+                <li><b>클라우드 · 운영</b><span>허준클라우드 셀프호스팅</span></li>
+              </ul>
+            </div>
+            <div class="kk-axis" data-reveal>
+              <div class="kk-axis-h"><span class="n">02</span><h3>교육</h3><span class="en">Teach</span></div>
+              <p class="kk-axis-d">다음 세대를 키웁니다. 학교 현장 출강부터 실시간 수업 도구까지, 교육을 제품으로 만듭니다.</p>
+              <ul>
+                <li><b>학교 출강</b><span>부산기계공고 · 정보영재원</span></li>
+                <li><b>실시간 AI 수업</b><span>AI · AX 특강</span></li>
+                <li><b>학습 관리</b><span>KODE LMS</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="kk-sec">
+      <div class="kk-wrap kk-stats-sec">
+        <span class="kk-label" data-reveal>By the numbers</span>
+        <div class="kk-stats">
+          <div class="kk-stat" data-reveal><div class="n" data-count="8">0</div><div class="l">진행·출시 프로젝트</div></div>
+          <div class="kk-stat" data-reveal><div class="n" data-count="5">0</div><div class="l">운영 중인 서비스</div></div>
+          <div class="kk-stat" data-reveal><div class="n" data-count="2">0</div><div class="l">정규 출강 기관</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APPROACH ============ -->
+    <section class="kk-sec" id="approach">
+      <div class="kk-wrap">
+        <div class="kk-sec-head">
+          <span class="kk-label" data-reveal>How we work</span>
+          <h2 data-reveal>커리큘럼이 아니라 시스템.</h2>
+          <span class="kk-meta" data-reveal>01 — 04</span>
+        </div>
+        <div class="kk-appr">
+          <div class="kk-appr-row" data-reveal>
+            <span class="kk-appr-n">01</span>
+            <div><div class="kk-appr-t">진단</div><p class="kk-appr-d">팀·학교의 현재 상태와 목표 사이의 격차를 봅니다. 설문이 아니라 실제 코드와 수업 현장을 봅니다.</p></div>
+            <div class="kk-appr-ic"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div>
+          </div>
+          <div class="kk-appr-row" data-reveal>
+            <span class="kk-appr-n">02</span>
+            <div><div class="kk-appr-t">제작</div><p class="kk-appr-d">필요한 것을 직접 만듭니다. 웹·앱, 협업 도구, 수업 도구까지 — 기존 제품을 파는 대신 현장에 맞게 짓습니다.</p></div>
+            <div class="kk-appr-ic"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div>
+          </div>
+          <div class="kk-appr-row" data-reveal>
+            <span class="kk-appr-n">03</span>
+            <div><div class="kk-appr-t">운영</div><p class="kk-appr-d">허준클라우드 위에서 직접 배포하고 운영합니다. 외부 호스팅 비용 없이, 출시가 끝이 아니라 시작이 됩니다.</p></div>
+            <div class="kk-appr-ic"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div>
+          </div>
+          <div class="kk-appr-row" data-reveal>
+            <span class="kk-appr-n">04</span>
+            <div><div class="kk-appr-t">교육</div><p class="kk-appr-d">만든 것을 학교와 팀에 가르칩니다. 교실에서 나온 피드백이 다시 다음 제품의 재료가 됩니다.</p></div>
+            <div class="kk-appr-ic"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ============ MARQUEE ============ -->
-    <div class="marquee band band--ink" aria-hidden="true">
-      <div class="marquee__track" data-marquee>
-        <span>Build&ensp;—&ensp;Teach&ensp;—&ensp;Web&ensp;—&ensp;App&ensp;—&ensp;해커톤&ensp;—&ensp;Cloud&ensp;—&ensp;</span
-        ><span>Build&ensp;—&ensp;Teach&ensp;—&ensp;Web&ensp;—&ensp;App&ensp;—&ensp;해커톤&ensp;—&ensp;Cloud&ensp;—&ensp;</span>
+    <section class="kk-marq" aria-hidden="true">
+      <div class="kk-marq-track">
+        <span class="kk-marq-item">부산기계공고</span><span class="kk-marq-item">정보영재원</span><span class="kk-marq-item">부산참여플랫폼</span><span class="kk-marq-item">TeamHub</span><span class="kk-marq-item">BubbleMap</span><span class="kk-marq-item">AI · AX 특강</span><span class="kk-marq-item">KODE LMS</span><span class="kk-marq-item">허준클라우드</span>
+        <span class="kk-marq-item">부산기계공고</span><span class="kk-marq-item">정보영재원</span><span class="kk-marq-item">부산참여플랫폼</span><span class="kk-marq-item">TeamHub</span><span class="kk-marq-item">BubbleMap</span><span class="kk-marq-item">AI · AX 특강</span><span class="kk-marq-item">KODE LMS</span><span class="kk-marq-item">허준클라우드</span>
       </div>
-    </div>
-
-    <!-- ============ WORK ============ -->
-    <section class="work band band--paper" id="work">
-      <header class="section-head">
-        <h2 class="section-head__title" data-split>Selected work</h2>
-        <p class="section-head__meta" data-reveal>06 works — 개발&thinsp;·&thinsp;교육</p>
-      </header>
-
-      <ul class="work__list">
-
-        <li class="work__item" data-work>
-          <a class="work__link" href="https://team.kodekorea.kr" target="_blank" rel="noopener" data-cursor="Visit ↗">
-            <figure class="work__visual">
-              <div class="work__art" data-parallax>
-                <img src="assets/teamhub.webp" alt="" loading="lazy" decoding="async" />
-                <video class="work__video" src="assets/teamhub_web.mp4" muted loop playsinline preload="none" poster="assets/teamhub.webp" aria-hidden="true"></video>
-              </div>
-              <span class="work__index" aria-hidden="true">01</span>
-            </figure>
-            <div class="work__info">
-              <h3 class="work__title">TeamHub</h3>
-              <p class="work__desc">채널·티켓·스프린트·간트를 한곳에 모은 자체 협업 플랫폼 — 지금 저희 팀이 매일 쓰는 도구입니다.</p>
-              <ul class="work__tags" aria-label="분야">
-                <li>자체 프로덕트</li><li>Web App</li><li>운영 중</li>
-              </ul>
-              <span class="work__arrow" aria-hidden="true">→</span>
-            </div>
-          </a>
-        </li>
-
-        <li class="work__item" data-work>
-          <a class="work__link" href="#contact" data-cursor="View case">
-            <figure class="work__visual">
-              <div class="work__art" data-parallax>
-                <img src="assets/blockpy.webp" alt="" loading="lazy" decoding="async" />
-              </div>
-              <span class="work__index" aria-hidden="true">02</span>
-            </figure>
-            <div class="work__info">
-              <h3 class="work__title">BlockPy</h3>
-              <p class="work__desc">블록 코딩과 파이썬을 1:1 무손실로 오가는 교육용 IDE — 오프라인 데스크톱 앱으로 어디서든.</p>
-              <ul class="work__tags" aria-label="분야">
-                <li>EdTech</li><li>Electron</li><li>2026</li>
-              </ul>
-              <span class="work__arrow" aria-hidden="true">→</span>
-            </div>
-          </a>
-        </li>
-
-        <li class="work__item" data-work>
-          <a class="work__link" href="#contact" data-cursor="View case">
-            <figure class="work__visual">
-              <div class="work__art" data-parallax>
-                <img src="assets/civic.webp" alt="" loading="lazy" decoding="async" />
-              </div>
-              <span class="work__index" aria-hidden="true">03</span>
-            </figure>
-            <div class="work__info">
-              <h3 class="work__title">부산 공공디자인</h3>
-              <p class="work__desc">부산시 공공디자인 웹앱 — 시민이 도시의 디자인을 보고, 찾고, 제안하는 공간.</p>
-              <ul class="work__tags" aria-label="분야">
-                <li>공공 프로젝트</li><li>Web App</li><li>2026</li>
-              </ul>
-              <span class="work__arrow" aria-hidden="true">→</span>
-            </div>
-          </a>
-        </li>
-
-        <li class="work__item" data-work>
-          <a class="work__link" href="#contact" data-cursor="View case">
-            <figure class="work__visual">
-              <div class="work__art" data-parallax>
-                <img src="assets/cloud.webp" alt="" loading="lazy" decoding="async" />
-              </div>
-              <span class="work__index" aria-hidden="true">04</span>
-            </figure>
-            <div class="work__info">
-              <h3 class="work__title">허준클라우드</h3>
-              <p class="work__desc">Supabase·Render를 걷어내고 자체 VPS로 — 외부 호스팅 비용 0원의 셀프호스팅 인프라.</p>
-              <ul class="work__tags" aria-label="분야">
-                <li>인프라</li><li>Self-hosted</li><li>운영 중</li>
-              </ul>
-              <span class="work__arrow" aria-hidden="true">→</span>
-            </div>
-          </a>
-        </li>
-
-        <li class="work__item" data-work>
-          <a class="work__link" href="#contact" data-cursor="View case">
-            <figure class="work__visual">
-              <div class="work__art" data-parallax>
-                <img src="assets/vision.webp" alt="" loading="lazy" decoding="async" />
-              </div>
-              <span class="work__index" aria-hidden="true">05</span>
-            </figure>
-            <div class="work__info">
-              <h3 class="work__title">무인 CCTV 관제탑</h3>
-              <p class="work__desc">OpenCV·YOLO로 무인 관제 시스템을 만드는 16부작 영상 강의 — 컴퓨터 비전을 실무로.</p>
-              <ul class="work__tags" aria-label="분야">
-                <li>교육 콘텐츠</li><li>Computer Vision</li><li>2026</li>
-              </ul>
-              <span class="work__arrow" aria-hidden="true">→</span>
-            </div>
-          </a>
-        </li>
-
-        <li class="work__item" data-work>
-          <a class="work__link" href="#contact" data-cursor="함께하기">
-            <figure class="work__visual">
-              <div class="work__art" data-parallax>
-                <img src="assets/hackathon.webp" alt="" loading="lazy" decoding="async" />
-              </div>
-              <span class="work__index" aria-hidden="true">06</span>
-            </figure>
-            <div class="work__info">
-              <h3 class="work__title">KodeKorea 해커톤</h3>
-              <p class="work__desc">강의로 끝내지 않습니다. 부산에서 직접 여는 해커톤·부트캠프로 배운 걸 현장에서 완성하고, 지역 개발자 커뮤니티를 잇습니다.</p>
-              <ul class="work__tags" aria-label="분야">
-                <li>교육 · 커뮤니티</li><li>오프라인 행사</li><li>연 상시</li>
-              </ul>
-              <span class="work__arrow" aria-hidden="true">→</span>
-            </div>
-          </a>
-        </li>
-
-      </ul>
     </section>
 
-    <!-- ============ ABOUT ============ -->
-    <section class="about band band--teal" id="about">
-      <header class="section-head">
-        <h2 class="section-head__title" data-split>Studio</h2>
-        <p class="section-head__meta" data-reveal>부산에서, 끝까지</p>
-      </header>
-
-      <blockquote class="about__quote" data-split-lines>
-        Good software is quiet. We hide the complexity
-        <em>behind the infrastructure</em> and ship only the intent.
-      </blockquote>
-
-      <div class="about__grid">
-        <div class="about__portrait" data-reveal>
-          <img src="assets/studio.webp" alt="KodeKorea 스튜디오 작업 공간" loading="lazy" decoding="async" />
-        </div>
-        <div class="about__body">
-          <p data-reveal>
-            KodeKorea는 부산에 기반한 개발·교육 스튜디오입니다. 한쪽에선
-            대학·공공기관·기업의 웹과 앱, TeamHub 같은 자체 프로덕트를
-            <strong>만들고</strong>, 다른 한쪽에선 교육용 IDE와 영상 강의,
-            해커톤으로 다음 세대 개발자를 <strong>키웁니다</strong>.
-          </p>
-          <p data-reveal>
-            두 축은 서로를 먹여 살립니다. 현장에서 쌓은 개발 실력이 교육의
-            재료가 되고, 해커톤과 강의에서 만난 사람들이 다시 프로젝트로
-            이어집니다. 모든 서비스는 자체 클라우드 '허준클라우드' 위에서
-            돌아가 외부 호스팅 비용 없이 빠르게 움직입니다.
-          </p>
-          <dl class="about__stats">
-            <div data-reveal><dt data-count="8">0</dt><dd>진행·출시 프로젝트</dd></div>
-            <div data-reveal><dt data-count="3">0</dt><dd>운영 중인 서비스</dd></div>
-            <div data-reveal><dt data-count="2">0</dt><dd>자체 프로덕트</dd></div>
-          </dl>
+    <!-- ============ CTA ============ -->
+    <section class="kk-invert kk-cta" id="contact">
+      <div class="kk-cta-in">
+        <span class="kk-label" data-reveal style="color:var(--kk-ink-300)">Contact</span>
+        <div>
+          <h2 data-reveal>함께 만들 것을<br />이야기해요.</h2>
+          <div class="kk-cta-btm" data-reveal>
+            <a class="kk-btn kk-btn-accent" href="mailto:hello@kodekorea.kr">프로젝트 문의
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="kk-tlink" href="https://team.kodekorea.kr" target="_blank" rel="noopener">TeamHub 둘러보기
+              <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ SERVICES ============ -->
-    <section class="services band band--blush" id="services">
-      <header class="section-head">
-        <h2 class="section-head__title" data-split>Two axes</h2>
-        <p class="section-head__meta" data-reveal>만들고, 가르친다</p>
-      </header>
-      <ul class="axis__list">
-        <li class="axis__item" data-reveal data-cursor="●">
-          <div class="axis__head">
-            <span class="axis__num">01</span>
-            <h3 class="axis__name">개발<span>Build</span></h3>
+    <!-- ============ FOOTER ============ -->
+    <footer class="kk-invert">
+      <div class="kk-wrap kk-foot">
+        <div class="kk-foot-top">
+          <div>
+            <img class="kk-foot-logo" src="assets/logo-kode-white.png" alt="KODE KOREA" />
+            <p class="kk-foot-desc">KODE KOREA · 코드코리아<br />소프트웨어·교육 스튜디오<br />대표 조성호 · hello@kodekorea.kr</p>
           </div>
-          <p class="axis__lede">현장에서 쓰이는 소프트웨어를 짓습니다. 기획부터 디자인, 개발, 배포, 운영까지 한 팀이 끝까지.</p>
-          <ul class="axis__points">
-            <li><em>웹 · 앱</em>대학·공공기관·기업 프로젝트</li>
-            <li><em>자체 프로덕트</em>협업 플랫폼 TeamHub · LMS</li>
-            <li><em>클라우드 &amp; DevOps</em>허준클라우드 셀프호스팅 인프라</li>
-          </ul>
-        </li>
-        <li class="axis__item axis__item--edu" data-reveal data-cursor="●">
-          <div class="axis__head">
-            <span class="axis__num">02</span>
-            <h3 class="axis__name">교육<span>Teach</span></h3>
+          <div class="kk-foot-col">
+            <div class="kk-foot-h">Build</div>
+            <a href="https://team.kodekorea.kr" target="_blank" rel="noopener">TeamHub</a>
+            <a href="https://design.kodekorea.kr" target="_blank" rel="noopener">부산참여플랫폼</a>
+            <a href="https://bp.kodekorea.kr" target="_blank" rel="noopener">BubbleMap</a>
           </div>
-          <p class="axis__lede">다음 세대 개발자를 키웁니다. 강의로 끝내지 않고, 해커톤으로 배운 걸 현장에서 완성합니다.</p>
-          <ul class="axis__points">
-            <li><em>교육용 IDE</em>블록↔파이썬 BlockPy</li>
-            <li><em>영상 강의</em>OpenCV·YOLO 실무 커리큘럼</li>
-            <li><em>해커톤 · 부트캠프</em>부산 개발자 커뮤니티를 잇는 현장</li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-
-    <!-- ============ RECOGNITION ============ -->
-    <section class="recognition band band--paper2">
-      <header class="section-head">
-        <h2 class="section-head__title" data-split>Principles</h2>
-        <p class="section-head__meta" data-reveal>KodeKorea가 일하는 방식</p>
-      </header>
-      <ul class="recognition__list">
-        <li data-reveal><span>End-to-end</span><span>기획부터 배포·운영까지 한 팀이 끝까지 책임집니다</span><span>01</span></li>
-        <li data-reveal><span>Self-hosted</span><span>허준클라우드 자체 인프라로 외부 호스팅 비용 없이 운영합니다</span><span>02</span></li>
-        <li data-reveal><span>Fast &amp; Honest</span><span>빠른 일정과 투명한 커뮤니케이션 — 되는 것과 안 되는 것을 정직하게</span><span>03</span></li>
-        <li data-reveal><span>Design-driven</span><span>디자인 시스템과 모션까지 챙기는 개발 — 만듦새에 타협하지 않습니다</span><span>04</span></li>
-      </ul>
-    </section>
-
-    <!-- ============ CONTACT / FOOTER ============ -->
-    <footer class="contact band band--dark" id="contact">
-      <p class="contact__kicker" data-reveal>만들고 싶은 제품이 있으신가요?</p>
-      <a class="contact__big" href="mailto:hello@kodekorea.kr" data-cursor="Email us">
-        <span class="contact__big-line" data-split>Let's talk</span>
-      </a>
-      <div class="contact__grid">
-        <div class="contact__col" data-reveal>
-          <h4>Contact</h4>
-          <a href="mailto:hello@kodekorea.kr">hello@kodekorea.kr</a>
-          <span>Busan, Korea</span>
+          <div class="kk-foot-col">
+            <div class="kk-foot-h">Teach</div>
+            <a href="https://blend.kodekorea.kr" target="_blank" rel="noopener">AI · AX 특강</a>
+            <a href="https://lms.kodekorea.kr" target="_blank" rel="noopener">KODE LMS</a>
+            <a href="#work">학교 출강</a>
+          </div>
+          <div class="kk-foot-col">
+            <div class="kk-foot-h">Connect</div>
+            <a href="https://github.com/shain1912" target="_blank" rel="noopener">GitHub</a>
+            <a href="mailto:hello@kodekorea.kr">hello@kodekorea.kr</a>
+          </div>
         </div>
-        <div class="contact__col" data-reveal>
-          <h4>Elsewhere</h4>
-          <a href="https://team.kodekorea.kr" target="_blank" rel="noopener" data-cursor="↗">TeamHub</a>
-          <a href="https://lms.kodekorea.kr" target="_blank" rel="noopener" data-cursor="↗">LMS</a>
-          <a href="https://github.com/shain1912" target="_blank" rel="noopener" data-cursor="↗">GitHub</a>
-        </div>
-        <div class="contact__col" data-reveal>
-          <h4>Studio</h4>
+        <div class="kk-foot-btm">
+          <span>© 2026 KODE KOREA. All rights reserved.</span>
           <span data-clock>—:—</span>
-          <span>KST, 보통 24시간 내 회신</span>
         </div>
-      </div>
-      <div class="contact__legal" data-reveal>
-        <span>© 2026 KodeKorea</span>
-        <button class="contact__top" data-top data-magnetic>Back to top ↑</button>
       </div>
     </footer>
 
@@ -371,8 +293,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
-  <script type="module" src="js/main.js?v=5"></script>
+  <script src="js/main.js?v=6"></script>
 </body>
 </html>
